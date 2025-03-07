@@ -1,0 +1,564 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/*estilo do menu mobile*/
+.btn-fechar {
+  color: white;
+  padding: 10px;
+  font-size: 35px;
+  cursor: pointer;
+}
+.btn-abrir-menu i {
+  cursor: pointer;
+  background-color: #23232e;
+  color: white;
+  font-size: 35px;
+  padding: 15px;
+}
+
+.btn-abrir-menu {
+  background-color: #23232e;
+  display: flex;
+  justify-content: space-between;
+}
+.btn-abrir-menu img {
+  background-color: #23232e;
+  font-size: 24px;
+  letter-spacing: 4px;
+  width: 60px;
+  padding: 3px 25px;
+}
+.menu-mobile {
+  z-index: 7777;
+  font-size: 30px;
+  position: fixed;
+  background-color: #23232e;
+  height: 100vh;
+  top: 0;
+  right: 0;
+  width: 0%;
+  overflow: hidden;
+  transition: 0.5s;
+}
+.menu-mobile.menu-aberto {
+  width: 60%;
+}
+
+.menu-mobile nav ul {
+  text-align: right;
+  list-style: none;
+}
+
+.menu-mobile nav ul li a {
+  color: #fff;
+  font-size: 25px;
+  font-weight: 200;
+  text-decoration: none;
+  display: block;
+  padding: 20px 10%;
+}
+
+.menu-mobile nav ul li a:hover {
+  background-color: #00ff08;
+  font-size: 27px;
+  transition: 1s;
+}
+
+body {
+  background: rgba(80, 78, 78, 0.781);
+}
+
+.container0 {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(https://novaamerica.net/wp-content/uploads/2021/01/ativo-imobilizado-1200x480.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+  height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+  background-attachment: fixed;
+  text-transform: uppercase;
+}
+
+.container0:after {
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: 8;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0) 0,
+    rgba(0, 0, 0, 0) 40%,
+    #000 100%
+  );
+}
+
+.aba1 {
+  color: white;
+  text-align: center;
+  font-size: 30px;
+  text-shadow: -2px -2px 0 black, 2px -2px 0 black, -2px 2px 0 black,
+    2px 2px 0 black;
+}
+.nav-links {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  width: 100%;
+  position: fixed;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: #23232e;
+  height: 10vh;
+  z-index: 9999;
+}
+
+/* Links dentro da navbar */
+.nav-links a {
+  color: white;
+  text-decoration: none;
+}
+
+.nav-links a:hover {
+  opacity: 0.7;
+}
+
+/* Logo da navbar */
+.logo {
+  font-size: 24px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  width: 60px;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  transition: transform 0.3s ease-in-out;
+}
+
+.nav-list li {
+  letter-spacing: 3px;
+  margin-left: 32px;
+}
+
+.container1 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.box {
+  background-color: rgba(255, 253, 253, 0.712);
+  text-align: center;
+  width: 30%;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+input,
+.button {
+  padding: 15px;
+  width: 90%;
+  border-radius: 15px;
+  font-size: 15px;
+}
+
+.button {
+  cursor: pointer;
+  background-color: #23232e;
+  color: white;
+  font-size: 16px;
+  border: none;
+  width: 95%;
+}
+
+.oqueE-depreciação {
+  font-size: 20px;
+  padding: 30px;
+  border-radius: 15px;
+  width: 50%;
+  height: 60%;
+  background-color: rgba(255, 253, 253, 0.712);
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.h2-resultado {
+  background-color: white;
+  border-radius: 15px;
+  padding: 10px;
+  text-align: center;
+}
+
+.container2 {
+  position: relative;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 30px;
+  background-image: url(https://www.artsoft.pt/wp-content/uploads/2020/12/contabilidade-geral-analitica-Blog-ARTSOFT.jpg);
+  width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  text-shadow: -2px -2px 0 black, 2px -2px 0 black, -2px 2px 0 black,
+    2px 2px 0 black;
+  background-attachment: fixed;
+}
+
+.container2:after {
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: 8;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0) 0,
+    rgba(0, 0, 0, 0) 40%,
+    #000 100%
+  );
+}
+
+.container3 {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  font-size: 20px;
+}
+
+.aba3 {
+  background-color: rgba(255, 253, 253, 0.712);
+  border-radius: 15px;
+  padding: 30px;
+  width: 80%;
+  height: 100%;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+#sobre {
+  text-align: center;
+  background-color: white;
+  border-radius: 15px;
+  padding: 10px;
+}
+
+footer {
+  width: 100%;
+  color: #23232e;
+}
+
+.footer-link {
+  text-decoration: none;
+}
+#footer-content {
+  background-color: #23232e;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 3rem 3.5rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+#footer-contatos h1 {
+  margin-bottom: 0.75rem;
+  color: #ffffff;
+}
+
+#footer-contatos p {
+  color: white;
+}
+
+#footer-social-media {
+  display: flex;
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
+
+#footer-social-media .footer-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.5rem;
+  width: 2.5rem;
+  color: aliceblue;
+  border-radius: 50%;
+  transition: all 0.4s;
+}
+
+#footer-social-media .footer-link i {
+  font-size: 1.25rem;
+}
+#instagram {
+  background: linear-gradient(#7f37c9, #ff2992, #ff9807);
+}
+
+#linkedin {
+  background-color: #4229ce;
+}
+
+#zapzap {
+  background-color: #25d366;
+}
+
+#footer-social-media .footer-link:hover {
+  opacity: 0.9;
+}
+
+.footer-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  list-style: none;
+}
+
+.footer-list .footer-link {
+  color: #ffffff;
+  transition: all 0.4s;
+}
+
+.footer-list .footer-link:hover {
+  color: #7f37c9;
+}
+
+#footer-autoral {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 8vh;
+  background-color: #0e0c0c;
+  color: white;
+}
+
+.button-email {
+  cursor: pointer;
+  padding: 10px;
+  font-size: 18px;
+  width: 80%;
+  border-radius: 15px;
+  background: linear-gradient(#91c6f1, #f0cd9c);
+}
+
+.button-email:hover {
+  background: linear-gradient(#60a6df, #d3a86d);
+  padding: 12px;
+  font-size: 20px;
+  transition: 1s;
+}
+
+@media screen and (max-width: 360px) {
+  #footer-content {
+    font-size: 18px;
+    grid-template-columns: repeat(1, 1ftr);
+    padding: 3rem 2rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #footer-social-media {
+    display: flex;
+    justify-content: center;
+  }
+  #sobre {
+    font-size: 25px;
+  }
+  .container2 h1 {
+    font-size: 50px;
+  }
+  #inicio {
+    font-size: 35px;
+    padding: 15px;
+  }
+  .container1 {
+    padding: 5%;
+    gap: 1rem;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+  }
+  .box {
+    width: 90%;
+    padding: 5px;
+    border-radius: 15px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+  }
+  .button {
+    width: 100%;
+  }
+  .oqueE-depreciação {
+    padding: 30px;
+    border-radius: 15px;
+    width: 85%;
+    height: 60%;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  #footer-content {
+    font-size: 20px;
+    grid-template-columns: repeat(1, 1ftr);
+    padding: 3rem 2rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #footer-social-media {
+    display: flex;
+    justify-content: center;
+  }
+  #sobre {
+    font-size: 32px;
+  }
+  .aba3 {
+    font-size: 20px;
+  }
+  .container2 {
+    font-size: 30px;
+  }
+  #inicio {
+    font-size: 45px;
+  }
+  .container1 {
+    padding: 5%;
+    gap: 1rem;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+  }
+  .box {
+    width: 85%;
+    padding: 10px;
+    border-radius: 15px;
+  }
+  .button {
+    width: 100%;
+  }
+  .oqueE-depreciação {
+    font-size: 20px;
+    width: 85%;
+    height: 60%;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  #footer-content {
+    gap: 1.5rem;
+    font-size: 17px;
+    grid-template-columns: repeat(1, 1ftr);
+    padding: 3rem 2rem;
+    text-align: center;
+  }
+  #footer-social-media {
+    display: flex;
+    justify-content: center;
+  }
+  #sobre {
+    font-size: 35px;
+  }
+  .aba3 {
+    font-size: 25px;
+    width: 90%;
+  }
+  .container2 {
+    font-size: 27px;
+  }
+  #inicio {
+    font-size: 50px;
+  }
+  .container1 {
+    padding: 5%;
+    gap: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .box {
+    width: 85%;
+    padding: 10px;
+    border-radius: 15px;
+  }
+  .oqueE-depreciação {
+    font-size: 25px;
+    width: 97%;
+    height: 60%;
+  }
+  .h2-resultado {
+    font-size: 35px;
+  }
+}
+
+@media screen and (max-width: 690px) {
+  .nav-links {
+    display: none;
+  }
+  .logo2 {
+    display: block;
+  }
+  #footer-content {
+    gap: 1.5rem;
+    font-size: 17px;
+    grid-template-columns: repeat(1, 1ftr);
+    padding: 3rem 2rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #footer-social-media {
+    display: flex;
+    justify-content: center;
+  }
+  #sobre {
+    font-size: 30px;
+  }
+  .aba3 {
+    font-size: 18px;
+    width: 90%;
+  }
+  .container2 {
+    font-size: 27px;
+  }
+  #inicio {
+    font-size: 50px;
+  }
+  .container1 {
+    padding: 5%;
+    gap: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .box {
+    width: 85%;
+    padding: 10px;
+    border-radius: 15px;
+  }
+  .oqueE-depreciação {
+    font-size: 18px;
+    width: 97%;
+    height: 60%;
+  }
+  .h2-resultado {
+    font-size: 30px;
+  }
+}
