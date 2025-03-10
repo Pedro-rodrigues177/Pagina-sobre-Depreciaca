@@ -21,7 +21,7 @@ if (!empty($_POST['compra']) && !empty($_POST['venda']) && !empty($_POST['vida']
         $depreciacao_anual = ($valor_compra - $valor_venda) / $vida_util;
         $resultado = "📊 A depreciação anual é: <strong>R$ " . number_format($depreciacao_anual, 2, ',', '.') . "</strong>";
         $depreciacao_mensal = ($valor_compra - $valor_venda) / $vida_util_meses;
-        $resultado_mensal = "📊 A depreciação anual é: <strong>R$ " . number_format($depreciacao_mensal, 2, ',', '.') . "</strong>";
+        $resultado_mensal = "📊 A depreciação mensal é: <strong>R$ " . number_format($depreciacao_mensal, 2, ',', '.') . "</strong>";
     }
 } else {
     $smg = "⚠️ Preencha todos os campos!";
