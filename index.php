@@ -201,7 +201,7 @@ A fórmula é: Depreciação anual = Valor da aquisição - Valor residual / Vid
                 <h3 style="color: white;">Contatar por E-mail.</h3><br>
                 <p style="color: white;">Clique abaixo para contatar por E-mail!</p><br>
                 <div id="input_group">
-                    <a href="rodriguesphtech.infinityfreeapp.com/formulario-email.php?i=1" target="_blank">
+                    <a href="http://www.rodriguesphtech.infinityfreeapp.com/formulario-email.php" target="_blank">
                         <button class="button-email"><i class="fa-solid fa-paper-plane"></i></button>
                     </a>
                 </div>
